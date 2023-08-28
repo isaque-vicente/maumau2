@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Montserrat:wght@100;200;700&family=Orbitron&family=Poppins:wght@100;200;500&family=Raleway:wght@200&family=Roboto:ital,wght@0,500;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top left, #6ce9ff, #1042d6 100%);
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+main h3 {
+    color: #65666a;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+main .colors {
+    text-align: center;
+}
+
+main .colors input {
+    appearance: none;
+    width: 80px;
+    height: 45px;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+main .directions {
+    text-align: center;
+}
+
+main .directions>i {
+    font-size: 2em;
+    font-weight: 500;
+    color: rgb(138,143,148);
+    cursor: pointer;
+}
+
+main .directions > i.active{
+    background-color: rgb(13, 80, 80) !important;
+
+} 
+
+main .buttonGenerate, .buttonCopy{
+    width: 100%;
+    height: 45px;
+    border: none;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 400;
+    border: 10px;
+    cursor: pointer;
+}

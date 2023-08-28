@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Montserrat:wght@100;200;700&family=Orbitron&family=Poppins:wght@100;500&family=Raleway:wght@200&family=Roboto:ital,wght@0,500;1,900&display=swap');
+
+body {
+    background-image: url("/assets/midias/MicrosoftTeams-image.png");
+    background-repeat: no-repeat;  
+    background-color: #000000;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    margin: 50% 0 0 0;
+    position: relative;
+    
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 1)40%, rgba(20, 20, 20, 0)100%);
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    perspective: 450px;
+}
+
+.text-scroll {
+    color: #F6DF51;
+    font-size: 3vw;
+    position: absolute;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: justify;
+    animation: scroll 65s linear infinite;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+@keyframes scroll{
+    from{top:0; transform: translateZ(0) rotateX(20deg);}
+    to{top: -7500px; transform: translateZ(-2500px)rotateX(21deg);}
+}
+
